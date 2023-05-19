@@ -1,4 +1,5 @@
-import 'package:classico/home_page.dart';
+import 'package:classico/pages/home_page.dart';
+import 'package:classico/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,19 +7,37 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp();
-
   @override
   Widget build(BuildContext context) {
-    
+    return MaterialApp(
+      // home: Homepage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.red),
+      darkTheme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => Homepage(),
+        "/Login": (context) => LoginPage()
+      },
+    );
+  }
+}
+
+
+
+
+    // bringVegetables(thaila: true);
+
+  // bringVegetables({required bool thaila,int rupees = 100}){
+  //   // Take cycle 
+  //   // Go to Sec 16 
+  // }
     // double pi= 3.14;
     // bool isMale = true;
     // num temp = 30.5;
 
     // var day = " Tuesday ";
     // const pi = 3.14;  // once define it can not be changed 
-    return MaterialApp(
-      home: Homepage(),
-    );
-  }
-}
