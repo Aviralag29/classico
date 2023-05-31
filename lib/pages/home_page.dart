@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 
 class Homepage extends StatelessWidget {
-  final int days = 30;
   final String name = "Aviral";
   @override
   Widget build(BuildContext context) {
@@ -11,7 +10,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to $days days of flutter by $name"),
+          child: Text("Welcome to flutter app created by $name"),
         ),
       ),
       drawer: Drawer(),
