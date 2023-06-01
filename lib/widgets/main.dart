@@ -4,6 +4,7 @@ import 'package:classico/utils/routes.dart';
 import 'package:classico/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:classico/models/EasyShop.dart';
 
 void main() {
   runApp(MyApp());
