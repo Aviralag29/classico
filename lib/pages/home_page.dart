@@ -1,3 +1,4 @@
+import "package:classico/widgets/drawer.dart";
 import "package:flutter/material.dart";
 
 class Homepage extends StatelessWidget {
@@ -13,7 +14,7 @@ class Homepage extends StatelessWidget {
           child: Text("Welcome to flutter app created by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

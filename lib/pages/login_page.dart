@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Form(
           key: _formkey,
           child: Column(
-            children: [
+            children: [ 
               Image.asset(
                 "assets/images/download.png",
                 fit: BoxFit.cover,
